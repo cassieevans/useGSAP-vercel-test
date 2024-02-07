@@ -31,7 +31,7 @@ export default function Boxes() {
       <section className="boxes-container" ref={container}>
         <h2>Testing on Vercel</h2>
         <div>
-          <button onClick={toggleTimeline}>Testing</button>
+          <button onClick={toggleTimeline}>I hate technology</button>
         </div>
         <div className="box gradient-blue">Box 1</div>
         <div className="box gradient-blue">Box 2</div>
