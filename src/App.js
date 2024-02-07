@@ -1,7 +1,7 @@
-import React from 'react';
-import { useRef } from 'react';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
+import React from "react";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(useGSAP);
 
@@ -15,11 +15,11 @@ export default function Boxes() {
 
   useGSAP(
     () => {
-      const boxes = gsap.utils.toArray('.box');
+      const boxes = gsap.utils.toArray(".box");
       tl.current = gsap
         .timeline()
         .to(boxes[0], { x: 120, rotation: 360 })
-        .to(boxes[1], { x: -120, rotation: -360 }, '<')
+        .to(boxes[1], { x: -120, rotation: -360 }, "<")
         .to(boxes[2], { y: -166 })
         .reverse();
     },
@@ -29,7 +29,7 @@ export default function Boxes() {
   return (
     <main>
       <section className="boxes-container" ref={container}>
-        <h2>Use the button to toggle a Timeline</h2>
+        <h2>Testing on Vercel</h2>
         <div>
           <button onClick={toggleTimeline}>Toggle Timeline</button>
         </div>
